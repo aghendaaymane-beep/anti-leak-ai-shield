@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Anti-Leak AI Shield",
+  "version": "1.0",
+  "description": "Protection des données vers les IA",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+ }
